@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: black;
+}
+
+.main{
+    display: block;  
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; 
+}
+
+.all{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 50%;
+    margin: auto;
+}
+
+.container-one{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.container-all{
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-areas: "h1 h1"
+                        "p select";
+    margin: auto;
+}
+.container-all h1{
+    width: 100%;
+    grid-area: h1;
+    margin-bottom: 20px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+.container-all p{
+    grid-area: p;
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+}
+
+select{
+    grid-area: select;
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255) !important;
+    cursor: pointer;
+    font-weight: 700;
+    background:rgb(129, 14, 14);
+    color: rgb(255, 255, 255);
+}
+
+select:hover{
+    background:rgb(175, 20, 20);
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+
+
+.container-two{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+button{
+    text-align: center;
+    width: 100px;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: rgb(151, 14, 14);
+    color: white;
+}
+
+button:hover{
+    background:rgb(255, 0, 0);
+    color: white;
+    font-size: 1.3em;
+}
+
+h2{
+    display: none;
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+    font-size: 8em;
+}
+.hidden{
+    display: none;
+}
+
+.image-select{
+    display: none;
+    position: relative;
+}
+.image-select img{
+    width: 250px;
+    height: 250px;
+}
+
+.container-textos .empate,.ganar,.perder{
+    display: none;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2em;
+}
+.content-text{
+    color: white;
+}
+.show{
+    display: block !important;
+}
+
+.playagain{
+    width: 200px;
+    font-size: 1.3em;
+}
+.playagain:hover{
+    width: 200px;
+    font-size: 1.5em;
+}

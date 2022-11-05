@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego</title>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="all">
+            <section class="container-textos">
+                <div id="empate" class="content-text empate">HAS EMPATADO</div>
+                <div id="ganar" class="content-text ganar">HAS GANADO</div>
+                <div id="perder" class="content-text perder">HAS PERDIDO</div>
+            </section>
+            <section class="container-one">
+                <div class="container-all">
+                    <h1>Usuario 1</h1>
+                    <p>Escoge una opción: </p>
+                    <select name="select" id="selectOption1">
+                        <option value="" disabled selected>-</option>
+                        <option value="piedra">Piedra</option>
+                        <option value="papel">Papel</option>
+                        <option value="tijera">Tijera</option>
+                    </select>
+                </div>
+                <div class="image-select">
+                    <img id="optionuser" src="/images/papel.png" alt="">
+                </div>
+                <h2 id="vs">VS</h2>
+                <div class="image-select">
+                    <img id="optionmachine" src="/images/piedra.png" alt="">
+                </div>
+
+            </section>
+            <section class="container-two">
+                <a id="url"><button id="jugar" type="submit" name="jugar">JUGAR</button></a>
+            </section>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>
